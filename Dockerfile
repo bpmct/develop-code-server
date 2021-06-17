@@ -23,7 +23,7 @@ RUN sudo chown -R coder:coder /home/coder/.local
 # See https://github.com/cdr/code-server/blob/main//CONTRIBUTING.md#requirements for rationale
 # -----------
 
-# install node v14.x with NodeSource
+# install Node v14.x with NodeSource
 RUN curl -fsSL https://deb.nodesource.com/setup_14.x | sudo -E bash - && \
     sudo apt-get install -y nodejs
 
