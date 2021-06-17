@@ -27,6 +27,12 @@ RUN sudo chown -R coder:coder /home/coder/.local
 RUN curl -fsSL https://deb.nodesource.com/setup_14.x | sudo -E bash - && \
     sudo apt-get install -y nodejs
 
+# Install npm dependencies
+RUN sudo npm install -g yarn npfm
+
+# Install other dependencies
+RUN sudo apt-get install build-essential jq rsync unzip
+
 # -----------
 
 # Port
