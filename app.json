@@ -12,7 +12,7 @@
   ],
   "env": {
     "GIT_REPO": {
-      "description": "URL of a git repo to clone (optional)",
+      "description": "Git repository to clone. You can fork code-server and put the URL there:",
       "required": false
     },
     "PASSWORD": {

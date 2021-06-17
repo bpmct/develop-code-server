@@ -1,28 +1,15 @@
-# deploy-code-server 🚀
+# develop-code-server
 
-A collection of one-click buttons and scripts for deploying [code-server](https://github.com/cdr/code-server) to various cloud hosting platforms. The fastest way to get a code-server environment! ☁️
+Develop code-server with code-server in the cloud 🤯
 
-|                                                                                                                 | Name              | Type          | Lowest-Price Plan                     | Deploy                                                  |
-| --------------------------------------------------------------------------------------------------------------- | ----------------- | ------------- | ------------------------------------- | ------------------------------------------------------- |
-| [![DigitalOcean](img/logo/digitalocean.png)](https://digitalocean.com)                                          | DigitalOcean      | VM            | $5/mo, 1 CPU, 1 GB RAM                | [see guide](guides/digitalocean.md)                     |
-| [![Vultr](img/logo/vultr.png)](https://vultr.com)                                                               | Vultr             | VM            | $3.50/mo, 1 CPU, 512 MB RAM           | coming soon                                             |
-| [![Linode](img/logo/linode.png)](https://linode.com)                                                            | Linode            | VM            | $5/mo, 1 CPU, 1 GB RAM                | [see guide](guides/linode.md)                           |
-| [![Railway](img/logo/railway.png)](https://railway.app)                                                         | Railway           | Container     | Free, Shared CPU, 1 GB RAM 🚀 | [see guide](guides/railway.md)                          |
-| [![Heroku](img/logo/heroku.png)](https://heroku.com)                                                            | Heroku            | Container     | Free, 1 CPU, 512 MB RAM               | [see guide](guides/heroku.md)                           |
-| [![Azure App Service](img/logo/azure-app-service.png)](https://azure.microsoft.com/en-us/services/app-service/) | Azure App Service | Container     | Free, 1 CPU, 1 GB RAM                 | [see guide](https://github.com/bpmct/code-server-azure) |
-| [![Coder](img/logo/coder.png)](https://coder.com/docs)                                                          | Coder             | Dev Workspace | For developer teams 👨🏼‍💻                | [read the docs](https://coder.com/docs)                 |
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template?template=https%3A%2F%2Fgithub.com%2Fbpmct%2Fdevelop-code-server&envs=PASSWORD%2CGIT_REPO&optionalEnvs=GIT_REPO&PASSWORDDesc=Password+to+log+in+and+code.+Keep+this+secret&GIT_REPODesc=Git+repository+to+clone.+You+can+fork+code-server+and+put+the+URL+there%3A&GIT_REPODefault=https%3A%2F%2Fgithub.com%2Fcdr%2Fcode-server)
 
----
+> ℹ️ This project is incomplete. See [issues](https://github.com/bpmct/develop-code-server) to see what is missing
 
-## code-server on a VM vs. a Container
+## Get started
 
-- VMs are deployed once, and then can be modified to install new software
-  - You need to save "snapshots" to use your latest images
-  - Storage is always persistent, and you can usually add extra volumes
-  - VMs can support many workloads, such as running Docker or Kubernetes clusters
-  - [👀 Docs for the VM install script](deploy-vm/)
-- Deployed containers do not persist, and are often rebuilt
-  - Containers can shut down when you are not using them, saving you money
-  - All software and dependencies need to be defined in the `Dockerfile` or install script so they aren't destroyed on a rebuild. This is great if you want to have a new, clean environment every time you code
-  - Storage may not be redundant. You may have to use [rclone](https://rclone.org/) to store your filesystem on a cloud service, for info:
-- [📄 Docs for code-server-deploy-container](deploy-container/)
+1. Deploy to railway, set a repo
+1. Fork the code-server repo and add it as a remote
+1. Follow code-server's [contributing guide](https://github.com/cdr/code-server/blob/main/docs/CONTRIBUTING.md) to get started.
+
+This environment is a fork of [deploy-code-server](https://github.com/cdr/deploy-code-server) with all of the [requirements](https://github.com/cdr/code-server/blob/main/docs/CONTRIBUTING.md#requirements) added for developing code-server.
