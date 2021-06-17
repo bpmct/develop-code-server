@@ -4,7 +4,7 @@ Develop code-server with code-server in the cloud 🤯
 
 [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template?template=https%3A%2F%2Fgithub.com%2Fbpmct%2Fdevelop-code-server&envs=PASSWORD%2CGIT_REPO&optionalEnvs=GIT_REPO&PASSWORDDesc=Password+to+log+in+and+code.+Keep+this+secret&GIT_REPODesc=Git+repository+to+clone.+You+can+fork+code-server+and+put+the+URL+there%3A&GIT_REPODefault=https%3A%2F%2Fgithub.com%2Fcdr%2Fcode-server)
 
-> ℹ️ This project is incomplete. See [issues](https://github.com/bpmct/develop-code-server) to see what is missing
+> ℹ️ This project is incomplete. See [issues](https://github.com/bpmct/develop-code-server/issues) to see what is missing
 
 ## Get started
 
