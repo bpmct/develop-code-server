@@ -31,7 +31,7 @@ RUN curl -fsSL https://deb.nodesource.com/setup_14.x | sudo -E bash - && \
 RUN sudo npm install -g yarn npfm
 
 # Install other dependencies
-RUN sudo apt-get install build-essential jq rsync unzip
+RUN sudo apt-get install -y build-essential jq rsync unzip
 
 # -----------
 
