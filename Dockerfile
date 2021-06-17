@@ -33,6 +33,10 @@ RUN sudo npm install -g yarn npfm
 # Install other dependencies
 RUN sudo apt-get install -y build-essential jq rsync unzip
 
+# Install code-server extensions
+RUN code-server --install-extension actboy168.tasks
+
+
 # -----------
 
 # Port

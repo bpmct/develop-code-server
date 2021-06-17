@@ -12,3 +12,9 @@ Develop code-server with code-server in the cloud 🤯
 1. Follow code-server's [contributing guide](https://github.com/cdr/code-server/blob/main/docs/CONTRIBUTING.md) to get started developing
 
 This environment is a fork of [deploy-code-server](https://github.com/cdr/deploy-code-server) with all of the [requirements](https://github.com/cdr/code-server/blob/main/docs/CONTRIBUTING.md#requirements) added for developing code-server.
+
+## FAQ
+
+### I get a "301 Killed" when I ran `yarn` for the first time
+
+You may need to solve this by simply re-runing the command. This is an issue with the memory limits in Railway.
