@@ -19,9 +19,23 @@ COPY deploy-container/rclone-tasks.json /tmp/rclone-tasks.json
 # Fix permissions for code-server
 RUN sudo chown -R coder:coder /home/coder/.local
 
-# Custom software and dependencies for your code-server development
+# Custom software and dependencies for code-server development
 # See https://github.com/cdr/code-server/blob/main//CONTRIBUTING.md#requirements for rationale
 # -----------
+
+# install Node v14.x with NodeSource
+RUN curl -fsSL https://deb.nodesource.com/setup_14.x | sudo -E bash - && \
+    sudo apt-get install -y nodejs
+
+# Install npm dependencies
+RUN sudo npm install -g yarn npfm
+
+# Install other dependencies
+RUN sudo apt-get install -y build-essential jq rsync unzip
+
+# Install code-server extensions
+RUN code-server --install-extension actboy168.tasks
+
 
 # -----------
 
